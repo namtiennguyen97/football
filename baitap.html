@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form>
+
+    <img id='mag'  src="bai-toan-3768-1551057063-6906-1551496131.png"/>
+    <p>Click and wait!</p>
+    <input type="button" value="Click Over here!" onclick="moveRight();"/>
+</form>
+<script>
+    let imgball = null;
+    imgball = document.getElementById("mag");
+    function make() {
+        imgball = document.getElementById("mag");
+        imgball.style.position = 'relative';
+        imgball.style.left = '0px';
+    }
+    function moveRight() {
+        imgball.style.left = parseInt(imgball.style.left) + 10 + "px";
+    }
+    window.onload = make();
+</script>
+</body>
+</html>
